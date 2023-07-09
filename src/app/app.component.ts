@@ -121,10 +121,10 @@ import * as shape from 'd3-shape';
         </ng-template>
       </ngx-graph>
       <ng-container>
-        <app-zoom-container (changeZoomLevel)="changeZoomLevel($event)" [zoomLevel]="zoomLevel"></app-zoom-container>
+        <app-zoom-container [ngClass]="{moveClass: this.selectedNode?.isOpen}" (changeZoomLevel)="changeZoomLevel($event)" [zoomLevel]="zoomLevel"></app-zoom-container>
       </ng-container>
       <ng-container>
-        <app-node-container [node]="selectedNode" *ngIf="this.selectedNode?.isOpen"></app-node-container>
+        <app-node-container  [node]="selectedNode" *ngIf="this.selectedNode?.isOpen"></app-node-container>
       </ng-container>
   </div>
   `,

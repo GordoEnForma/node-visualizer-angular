@@ -1,0 +1,13 @@
+.moveClass {
+    position: absolute;
+    bottom: 10px;
+    right: calc(10px + 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0.5px 1px 0px 2px #C9B5A5;
+}

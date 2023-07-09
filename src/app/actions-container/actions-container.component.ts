@@ -78,6 +78,7 @@ export class ActionsContainerComponent {
     @Output() toggleMoveGraph = new EventEmitter<void>();
     @Input() moveCondition: boolean = true;
     selectButtonClicked() {
+  
       this.toggleMoveGraph.emit();
     }
   
